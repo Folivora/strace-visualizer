@@ -1,0 +1,46 @@
+478760<strace> 1676778639.832874 execve("./functions/get_coordinates.py", ["./functions/get_coordinates.py", "-i", "testdata/devel/src/testimg.png", "-c", "50", "-p", "AFK Check"], 0x7ffe315d5798 /* 53 vars */) = 0
+478760<get_coordinates> 1676778639.835738 execve("/home/testuser/AntiAntiAFK/testdata/devel/aaafk-devel/bin/python3", ["python3", "./functions/get_coordinates.py", "-i", "testdata/devel/src/testimg.png", "-c", "50", "-p", "AFK Check"], 0x7ffebb0b9028 /* 53 vars */) = 0
+478760<python3> 1676778639.988863 clone(child_stack=0x7f13bbfb1ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478761<python3>], tls=0x7f13bbfb2640, child_tidptr=0x7f13bbfb2910) = 478761<python3>
+478760<python3> 1676778639.989244 clone(child_stack=0x7f13bb7b0ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478762<python3>], tls=0x7f13bb7b1640, child_tidptr=0x7f13bb7b1910) = 478762<python3>
+478760<python3> 1676778639.989517 clone(child_stack=0x7f13b8fafef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478763<python3>], tls=0x7f13b8fb0640, child_tidptr=0x7f13b8fb0910) = 478763<python3>
+478760<python3> 1676778640.216007 clone(child_stack=0x7f13a8200ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478764<python3>], tls=0x7f13a8201640, child_tidptr=0x7f13a8201910) = 478764<python3>
+478760<python3> 1676778640.216374 clone(child_stack=0x7f13a79ffef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478765<python3>], tls=0x7f13a7a00640, child_tidptr=0x7f13a7a00910) = 478765<python3>
+478760<python3> 1676778640.216718 clone(child_stack=0x7f139fffeef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478766<python3>], tls=0x7f139ffff640, child_tidptr=0x7f139ffff910) = 478766<python3>
+478762<python3> 1676778640.219776 exit(0 <unfinished ...>
+478761<python3> 1676778640.219828 exit(0 <unfinished ...>
+478762<python3> 1676778640.219871 <... exit resumed>) = ?
+478761<python3> 1676778640.219888 <... exit resumed>) = ?
+478763<python3> 1676778640.219935 exit(0) = ?
+478762<python3> 1676778640.220010 +++ exited with 0 +++
+478761<python3> 1676778640.220034 +++ exited with 0 +++
+478763<python3> 1676778640.220073 +++ exited with 0 +++
+478760<python3> 1676778640.220115 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f13bfa99ed0) = 478767<python3>
+478767<python3> 1676778640.222403 execve("/home/testuser/AntiAntiAFK/testdata/devel/aaafk-devel/bin/tesseract", ["tesseract", "--version"], 0x7f13a889ece0 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478767<python3> 1676778640.222812 execve("/home/testuser/.local/bin/tesseract", ["tesseract", "--version"], 0x7f13a889ece0 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478767<python3> 1676778640.222924 execve("/home/testuser/.local/bin/tesseract", ["tesseract", "--version"], 0x7f13a889ece0 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478767<python3> 1676778640.223026 execve("/usr/local/sbin/tesseract", ["tesseract", "--version"], 0x7f13a889ece0 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478767<python3> 1676778640.223129 execve("/usr/local/bin/tesseract", ["tesseract", "--version"], 0x7f13a889ece0 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478767<python3> 1676778640.223231 execve("/usr/sbin/tesseract", ["tesseract", "--version"], 0x7f13a889ece0 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478767<python3> 1676778640.223341 execve("/usr/bin/tesseract", ["tesseract", "--version"], 0x7f13a889ece0 /* 56 vars */) = 0
+478767<python3> 1676778640.250787 +++ exited with 0 +++
+478760<python3> 1676778640.250836 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=478767<tesseract>, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+478760<python3> 1676778640.327942 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f13bfa99ed0) = 478768<python3>
+478768<python3> 1676778640.330131 execve("/home/testuser/AntiAntiAFK/testdata/devel/aaafk-devel/bin/tesseract", ["tesseract", "/tmp/tess_epmk8467_input.PNG", "/tmp/tess_epmk8467", "-c", "tessedit_create_tsv=1"], 0x7f13a8876b10 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478768<python3> 1676778640.330296 execve("/home/testuser/.local/bin/tesseract", ["tesseract", "/tmp/tess_epmk8467_input.PNG", "/tmp/tess_epmk8467", "-c", "tessedit_create_tsv=1"], 0x7f13a8876b10 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478768<python3> 1676778640.330387 execve("/home/testuser/.local/bin/tesseract", ["tesseract", "/tmp/tess_epmk8467_input.PNG", "/tmp/tess_epmk8467", "-c", "tessedit_create_tsv=1"], 0x7f13a8876b10 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478768<python3> 1676778640.330466 execve("/usr/local/sbin/tesseract", ["tesseract", "/tmp/tess_epmk8467_input.PNG", "/tmp/tess_epmk8467", "-c", "tessedit_create_tsv=1"], 0x7f13a8876b10 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478768<python3> 1676778640.330542 execve("/usr/local/bin/tesseract", ["tesseract", "/tmp/tess_epmk8467_input.PNG", "/tmp/tess_epmk8467", "-c", "tessedit_create_tsv=1"], 0x7f13a8876b10 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478768<python3> 1676778640.330619 execve("/usr/sbin/tesseract", ["tesseract", "/tmp/tess_epmk8467_input.PNG", "/tmp/tess_epmk8467", "-c", "tessedit_create_tsv=1"], 0x7f13a8876b10 /* 56 vars */) = -1 ENOENT (Нет такого файла или каталога)
+478768<python3> 1676778640.330695 execve("/usr/bin/tesseract", ["tesseract", "/tmp/tess_epmk8467_input.PNG", "/tmp/tess_epmk8467", "-c", "tessedit_create_tsv=1"], 0x7f13a8876b10 /* 56 vars */) = 0
+478768<python3> 1676778640.614667 clone(child_stack=0x7fbb221d5e70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478769<tesseract>], tls=0x7fbb221d6640, child_tidptr=0x7fbb221d6910) = 478769<tesseract>
+478768<python3> 1676778640.615189 clone(child_stack=0x7fbb219d4e70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478770<tesseract>], tls=0x7fbb219d5640, child_tidptr=0x7fbb219d5910) = 478770<tesseract>
+478768<python3> 1676778640.615490 clone(child_stack=0x7fbb211d3e70, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[478771<tesseract>], tls=0x7fbb211d4640, child_tidptr=0x7fbb211d4910) = 478771<tesseract>
+478771<tesseract> 1676778641.796745 +++ exited with 0 +++
+478770<tesseract> 1676778641.796809 +++ exited with 0 +++
+478769<tesseract> 1676778641.796828 +++ exited with 0 +++
+478768<python3> 1676778641.799076 +++ exited with 0 +++
+478760<python3> 1676778641.799107 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=478768<tesseract>, si_uid=1000, si_status=0, si_utime=384, si_stime=25} ---
+478766<python3> 1676778641.862599 +++ exited with 0 +++
+478765<python3> 1676778641.862737 +++ exited with 0 +++
+478764<python3> 1676778641.870314 +++ exited with 0 +++
+478760<python3> 1676778641.870432 +++ exited with 0 +++

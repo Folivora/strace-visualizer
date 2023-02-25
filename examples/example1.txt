@@ -1,0 +1,10 @@
+668329<strace> 1677116937.255996 execve("/usr/bin/time", ["/usr/bin/time", "./test.py"], 0x7ffea893e8e0 /* 51 vars */) = 0
+668329<time> 1677116937.284753 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f208b11d890) = 668330<time>
+668330<time> 1677116937.285296 execve("./test.py", ["./test.py"], 0x7ffdbda74520 /* 51 vars */) = 0
+668330<test.py> 1677116937.287295 execve("/home/tnuser/strace-test/v-strace-test/bin/python3", ["python3", "./test.py"], 0x7ffc09341b18 /* 51 vars */) = 0
+668330<python3> 1677116937.346224 clone(child_stack=0x7f47f8dafef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[668331<python3>], tls=0x7f47f8db0640, child_tidptr=0x7f47f8db0910) = 668331<python3>
+668331<python3> 1677116937.347025 exit(0) = ?
+668331<python3> 1677116937.347121 +++ exited with 0 +++
+668330<python3> 1677116937.351981 +++ exited with 0 +++
+668329<time> 1677116937.352043 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=668330, si_uid=1000, si_status=0, si_utime=4, si_stime=0} ---
+668329<time> 1677116937.356151 +++ exited with 0 +++
