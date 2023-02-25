@@ -1,7 +1,7 @@
 ### Description  
 
-This script draws processes/threads tree from strace output.
-Work with strace v5.15 and above. Set of arguments to right parse output further:
+This script draws processes/threads tree from strace output.  
+Work with strace v5.15 and above. Set of arguments to right parse output further:  
 `strace -o <strace_output_file> -ttt -Y -f -e trace=execve,clone,exit <command>`  
 `./strace-visualizer.py -i <strace_output_file> [-o <image.png>]`  
 
